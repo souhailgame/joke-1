@@ -7,7 +7,7 @@
     <style>
         .black-rectangle {
             background-color: black;
-            color: white;
+            color: rgb(73, 66, 66);
             padding: 20px;
             margin: 20px;
             height: 400px;
@@ -34,6 +34,7 @@
         <div class="row">
             <div class="col centered-text">
                 <h1>واش نت كاي?</h1>
+                <h1>يله جاوببزربة مالك تعطلتي صضمنا معاك بلجواب ديالك</h5>
             </div>
         </div>
         <div class="row button-container">
@@ -47,10 +48,10 @@
         const container = document.querySelector(".button-container");
 
         noButton.addEventListener("click", () => {
-            // Move the "Yes" button to a new position
+            // Move the "no" button to a new position
             noButton.style.position = "absolute";
-            noButton.style.left = Math.random() * 80 + "%";
-            noButton.style.top = Math.random() * 80 + "%";
+            noButton.style.left = Math.random() * 90 + "%";
+            noButton.style.top = Math.random() * 90 + "%";
         });
 
         yesButton.addEventListener("click", () => {
