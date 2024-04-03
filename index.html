@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>joke by souhail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .black-rectangle {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            height: 400px;
+            position: relative;
+        }
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .no-button {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid black-rectangle">
+        <div class="row">
+            <div class="col centered-text">
+                <h1>واش نت كاي?</h1>
+            </div>
+        </div>
+        <div class="row button-container">
+            <button id="no-button" class="btn btn-danger no-button">No</button>
+            <button id="yes-button" class="btn btn-success">Yes</button>
+        </div>
+    </div>
+    <script>
+        const noButton = document.getElementById("no-button");
+        const yesButton = document.getElementById("yes-button");
+        const container = document.querySelector(".button-container");
+
+        noButton.addEventListener("click", () => {
+            // Move the "Yes" button to a new position
+            noButton.style.position = "absolute";
+            noButton.style.left = Math.random() * 80 + "%";
+            noButton.style.top = Math.random() * 80 + "%";
+        });
+
+        yesButton.addEventListener("click", () => {
+            // Show the error message
+            alert(" تفو عليك أولد لقحبة علاش ختريتي yes أداك لكاي اولد ولا نكول بنت لقحبا دوختيني !");
+        });
+    </script>
+</body>
+</html>
